@@ -1,0 +1,22 @@
+
+/*Oakwood ltd Framework v3.0 custom.css */
+
+/* site GFCare specific */
+
+/* Overides */
+
+:root {
+    --title-align: center;
+    --heading-align: center;
+}
+
+.cta {
+    margin:0 auto;
+    font-style: italic;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+/* Additions */
+
+
