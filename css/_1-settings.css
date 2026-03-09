@@ -1,0 +1,143 @@
+/*  _1.settings.css
+    Oakwood Framework v4.1.0
+    Design tokens — colours, fonts, spacing scale. Only file that differs per client.
+*/
+:root {
+
+    --site-max-width: 900px;
+
+    /* Responsive spacing */
+    --space-1: clamp(4px, 0.4vw, 6px); /* tiny */
+    --space-2: clamp(8px, 0.6vw, 12px); /* icon */
+    --space-3: clamp(12px, 1vw, 16px); /* paragraph */
+    --space-4: clamp(16px, 1.6vw, 24px); /* card content item padding */
+    --space-5: clamp(24px, 2.5vw, 40px);  /* block */
+    --space-6: clamp(40px, 4vw, 64px); /* section */
+
+    /* Semanmtic spacing */
+    --spacing-xs:var(--space-1);
+    --spacing-sm: var(--space-2);
+    --spacing-md: var(--space-3);
+    --spacing-lg: var(--space-4);
+    --spacing-inline: var(--space-3);
+    --spacing-content: var(--space-4);
+    --spacing-block: var(--space-5);
+    --spacing-section: var(--space-6);
+
+
+    --border-radius: 6px;           /* Border radius */
+    --border-color: #ccc;           /* Border colour for cards, blockquotes, tables */
+
+    --fab-size: 64px;
+    --fab-size-sm: 52px;
+    --fab-size-lg: 72px;
+    --fab-radius: 50%;              /* circular — default */
+    --fab-size-wide: calc(var(--fab-size) * 2.5);
+
+    --fab-bg: var(--bg-button);
+    --fab-color: var(--text-button);
+    --fab-bg-hover: var(--bg-button-hover);
+    --fab-color-hover: var(--text-button-hover);
+
+    --fab-shadow: var(--shadow-medium);
+    --fab-offset: 24px;
+
+
+
+    --font-base: Montserrat, sans-serif;
+    --font-brand: Montserrat, sans-serif;
+
+    --font-fluid-small:  clamp(0.875rem, 0.8vw + 0.75rem, 1rem);     /* captions, labels */
+    --font-fluid-body:   clamp(1rem, 1vw + 0.75rem, 1.125rem);        /* paragraphs */
+    --font-fluid-medium: clamp(1.125rem, 1.5vw + 0.9rem, 1.4rem);     /* intro, subheadings */
+    --font-fluid-large:  clamp(1.6rem, 2vw + 1.2rem, 2.2rem);         /* CTA, page titles */
+
+    --shadow-light: 0 0 10px rgba(0,0,0,0.1);
+    --shadow-medium: 0 4px 12px rgba(0,0,0,0.15);
+
+    --title-align: center;
+    --heading-align: left;
+    --th-td-text-align: left;
+
+    --brand-primary: lightblue;   /* Design tokens */
+    --brand-accent: blue;
+
+    --text-dark: black;
+    --text-medium: lightslategrey;
+    --text-light: white;
+
+
+    --bg-outer: ivory;
+    --bg-inner: white;
+    --bg-blockquote-table: honeydew;
+
+    --bg-nav-footer: lightblue;
+    --text-nav: navy;
+    --text-nav-hover: navy;
+    --text-footer: navy;
+
+    --bg-button: lightblue;
+    --bg-button-hover: dodgerblue;
+    --text-button: blue;
+    --text-button-hover: white;
+    --button-radius: 25px;
+
+    --link-color: blue;
+    --link-hover-color: navy;
+
+    --bg-card-normal: white;
+    --bg-card-highlight: honeydew;
+
+
+/* Fonts Remove any not required by site */
+
+@font-face {
+    font-display: swap;
+    font-family: 'ManufacturingConsent';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/ManufacturingConsent-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spectral';
+  src: url('/assets/fonts/spectral-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('/assets/fonts/spectral-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('/assets/fonts/spectral-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('/assets/fonts/spectral-lightitalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('/assets/fonts/spectral-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('/assets/fonts/spectral-bolditalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

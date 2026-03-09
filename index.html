@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<!--Framework v3 GFBase 2026-02-27-->
+<html lang="en" id="top">
+<!--Framework Oakwood v4 2026-03-09-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Georgina Painter BSc (Hons) Podiatry. Contact us for a complete mobile chiropody and podiatry service in the comfort of your own home.">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="stylesheet" href="/css/_1-settings.css">
+    <link rel="stylesheet" href="/css/_2-base.css">
+    <link rel="stylesheet" href="/css/_3-components.css">
+    <link rel="stylesheet" href="/css/_4-utilities.css">
+    <link rel="stylesheet" href="/css/_5-custom.css">
     <title>Georgina Foot Care</title>
 </head>
 
 <body>
 
-<section class="top-bar" id="top">
+<section class="top-bar">
     <a class="call" href="tel:07807457069" aria-label="Call Georgina Foot Care on 07807 457069">Call 07807 457069
     </a>
 
@@ -22,7 +25,7 @@
 
 
 <header>
-    <div class="site-header">
+    <div class="site-header"> 
         <div class="header-left">
             <img src="assets/images/logo.webp" alt="Georgina Foot Care logo" width="200" height="100">
         </div>
@@ -31,6 +34,7 @@
             <p><em>Mobile foot care on the Isle&nbsp;of&nbsp;Wight</em></p>
         </div>
     </div>
+
 
     <nav>
         <a href="#home" aria-current="page">Home</a>
@@ -72,53 +76,19 @@
 
     </section>
 
-    <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
 </main>
 
-<footer role="contentinfo">
-  <div id="footer-placeholder">
-    <div class="item-footer">
-        <p><strong>Call 07807 457069 for mobile foot care on the Isle of Wight.</strong></p>
-        <p>&copy; 2025 Georgina Painter BSc (Hons) Podiatry. All&nbsp;rights&nbsp;reserved.</p>
-        <p>HCPC&nbsp;Registered&nbsp;No&nbsp;CH33419. (Ref ns)</p>
-    </div>
-  </div>
-</footer>
+    <!-- Back to top -->
+    <a class="fab fab--bottom-right fab--pill" href="#top" aria-label="Back to top">↑</a>
 
 
-<script>
-  function loadFooter(retry = false) {
-    fetch('gfcare-footer.html')
-      .then(response => {
-        if (!response.ok) throw new Error('Footer file not found');
-        return response.text();
-      })
-      .then(data => {
-        if (data.trim() !== '') {
-          document.getElementById('footer-placeholder').innerHTML = data;
-        } else {
-          console.warn('Footer file is empty. Keeping fallback footer.');
-        }
-      })
-      .catch(error => {
-        console.error('Error loading footer:', error);
-        if (!retry) {
-          console.log('Retrying footer fetch in 1.5s...');
-          setTimeout(() => loadFooter(true), 1500);
-        } else {
-          console.warn('Footer fetch failed twice. Using fallback content.');
-        }
-      });
-  }
+    <!-- Footer (web component) -->
+    <footer role="contentinfo">
+       <site-footer></site-footer>
+   </footer>
 
-  loadFooter();
-</script>
-
-
-
-<script data-goatcounter="https://georginafootcare.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js">
-</script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>
