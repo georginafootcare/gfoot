@@ -1,0 +1,4 @@
+/* gfcare 2-column header — no center item */
+.site-header {
+    grid-template-columns: auto 1fr;
+}
