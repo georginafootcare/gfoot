@@ -40,7 +40,7 @@
     --fab-color-hover: var(--text-button-hover);
 
     --fab-shadow: var(--shadow-medium);
-    --fab-offset: 24px;
+    --fab-offset: var(--spacing-block);
 
 
 
@@ -88,6 +88,7 @@
     --bg-card-normal: white;
     --bg-card-highlight: honeydew;
 
+}
 
 /* Fonts Remove any not required by site */
 
