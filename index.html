@@ -1,91 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
 <!--Framework Oakwood v4 2026-03-09-->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Georgina Painter BSc (Hons) Podiatry. Contact us for a complete mobile chiropody and podiatry service in the comfort of your own home.">
-
-    <link rel="stylesheet" href="css/_1-settings.css">
-    <link rel="stylesheet" href="css/_2-base.css">
-    <link rel="stylesheet" href="css/_3-components.css">
-    <link rel="stylesheet" href="css/_4-utilities.css">
-    <link rel="stylesheet" href="css/_5-custom.css">
     <title>Georgina Foot Care</title>
+    <link rel="stylesheet" href="/css/_1-settings.css">
+    <link rel="stylesheet" href="/css/_2-base.css">
+    <link rel="stylesheet" href="/css/_3-components.css">
+    <link rel="stylesheet" href="/css/_4-utilities.css">
+    <link rel="stylesheet" href="/css/_5-custom.css">
 </head>
 
 <body>
 
-<section class="top-bar">
-    <a class="call" href="tel:07807457069" aria-label="Call Georgina Foot Care on 07807 457069">Call 07807 457069
-    </a>
+    <!-- Top bar -->
+    <div class="top-bar">
+        <a class="call" href="tel:07807457069" aria-label="Call Georgina Foot Care on 07807 457069">Call 07807 457069</a>
+    </div>
 
-</section>
-
-
-<header>
-    <div class="site-header"> 
+    <!-- Header -->
+    <header class="site-header">
         <div class="header-left">
             <img src="assets/images/logo.webp" alt="Georgina Foot Care logo" width="200" height="100">
         </div>
-
         <div class="header-right">
             <p><em>Mobile foot care on the Isle&nbsp;of&nbsp;Wight</em></p>
         </div>
-    </div>
+    </header>
 
-
+    <!-- Navigation -->
     <nav>
-        <a href="#home" aria-current="page">Home</a>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="gfcare-contact.html">Contact</a>
     </nav>
 
-    <section class="hero-container">
+    <!-- Hero image -->
+    <div class="hero-container">
         <div class="hero-image">
             <img src="assets/images/hero.webp"
                  alt="Georgina Painter BSc Hons Podiatry"
                  loading="eager"
-                 fetchpriority="high"
-            >
+                 fetchpriority="high">
         </div>
-    </section>
-</header>
+    </div>
 
-<main>
-    <section class="intro-container">
-        <article class="intro-item">
-            <h3>Georgina Painter BSc Hons Podiatry</h3>
-            <p>Enjoy professional podiatry services in the comfort of your own home where I offer</p>
-             <ul>
-              <li>Routine chiropody treatments</li>
-              <li>Lower limb assessments</li>
-              <li>Issue of simple insoles</li>
-              <li>Conservative management of ingrowing toenails</li>
-              <li>Fingernail trimming</li>
-            </ul>
-            <p>With experience across all age groups and a wide range of abilities, I provide compassionate care tailored to individual needs — with particular understanding of conditions such as dementia.</p>
-            <p>Please call for details of my reasonable treatment charges. Discounts given to couples and groups.</p>
-    </section>
+    <main>
 
-    <section class="cta-container">
-        <article  class="cta-item">
-            <p>You can contact Georgina using our <a href="gfcare-contact.html">contact form</a>.</p>
-        </article>
-    </section>
+        <!-- Intro -->
+        <section class="intro-container">
+            <div class="intro-item">
+                <h3>Georgina Painter BSc Hons Podiatry</h3>
+                <p>Enjoy professional podiatry services in the comfort of your own home where I offer</p>
+                <ul>
+                    <li>Routine chiropody treatments</li>
+                    <li>Lower limb assessments</li>
+                    <li>Issue of simple insoles</li>
+                    <li>Conservative management of ingrowing toenails</li>
+                    <li>Fingernail trimming</li>
+                </ul>
+                <p>With experience across all age groups and a wide range of abilities, I provide compassionate care tailored to individual needs — with particular understanding of conditions such as dementia.</p>
+                <p>Please call for details of my reasonable treatment charges. Discounts given to couples and groups.</p>
+            </div>
+        </section>
 
-    </section>
+        <!-- Call to action -->
+        <section class="cta-container">
+            <div class="cta-item">
+                <p>You can contact Georgina using our <a href="gfcare-contact.html">contact form</a>.</p>
+            </div>
+        </section>
 
-</main>
+    </main>
 
-    <!-- Back to top -->
+    <!-- FAB back to top -->
     <a class="fab fab--bottom-right fab--pill" href="#top" aria-label="Back to top">↑</a>
 
-
     <!-- Footer (web component) -->
-    <footer role="contentinfo">
-       <site-footer></site-footer>
-   </footer>
+    <site-footer></site-footer>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
