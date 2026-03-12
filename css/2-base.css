@@ -1,14 +1,19 @@
-/*  _1.base.css
+/*  2-base.css
     Oakwood Framework v4.0.0
     CSS reset + bare element defaults. No classes. Copy-paste once, never touch.
 */
 
 
+*, *::before, *::after {
+    box-sizing: border-box; /* Include padding inside elements */
+}
+
 html, body {
     font-family: var(--font-base);
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden;  Prevents horizontal scrolling it masks bugs*/
+    max-width: 100%;
+    overflow-x: hidden; /* Catch sneaky elements */
     background: var(--bg-outer);
     color: var(--text-dark);
     scroll-behavior: smooth;
@@ -123,4 +128,3 @@ button:hover {
     color: var(--text-button-hover);
     background-color: var(--bg-button-hover);
 }
-

@@ -6,7 +6,7 @@ class SiteFooter extends HTMLElement {
         <p>HCPC&nbsp;Registered&nbsp;No&nbsp;CH33419. (Ref js)</p>
     </div>`
         const script = document.createElement('script')
-        script.dataset.goatcounter = 'https://acme.goatcounter.com/count'
+        script.dataset.goatcounter = 'https://georginafoorcare.goatcounter.com/count'
         script.src = '//gc.zgo.at/count.js'
         script.async = true
         document.head.appendChild(script)
