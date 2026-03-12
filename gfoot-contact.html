@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<!--Framework v4 GFBase 2026-02-27-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Georgina Painter BSc (Hons) Podiatry. Contact us for a complete mobile chiropody and podiatry service in the comfort of your own home.">
+    <title>Georgina Foot Care</title>
+    <link rel="stylesheet" href="css/1-settings.css">
+    <link rel="stylesheet" href="css/2-base.css">
+    <link rel="stylesheet" href="css/3-components.css">
+    <link rel="stylesheet" href="css/4-utilities.css">
+    <link rel="stylesheet" href="css/5-custom.css">
+</head>
+<body>
+
+    <!-- Top bar: phone number -->
+    <div class="top-bar">
+        <a class="call" href="tel:07807457069" aria-label="Call Georgina Foot Care on 07807 457069">Call 07807 457069</a>
+    </div>
+
+    <!-- Header: logo left, strapline right (2-column layout via _5-custom.css) -->
+    <header class="site-header">
+        <div class="header-left">
+            <img src="assets/images/logo.webp" alt="Georgina Foot Care logo" width="200" height="100">
+        </div>
+        <div class="header-right">
+            <p><em>Mobile foot care on the Isle&nbsp;of&nbsp;Wight</em></p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <!-- Hero image -->
+    <div class="hero-container">
+        <div class="hero-image">
+            <img src="assets/images/hero.webp"
+                 alt="Georgina Painter BSc Hons Podiatry"
+                 loading="eager"
+                 fetchpriority="high">
+        </div>
+    </div>
+
+    <!-- Contact form -->
+    <main>
+        <div class="container-contact">
+            <div id="contact" class="item-contact">
+                <h2>Contact Georgina</h2>
+                <form action="https://submit-form.com/FcOhmtqC0" method="POST">
+
+                    <label for="name" class="required">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required aria-required="true">
+
+                    <label for="email" class="required">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
+
+                    <label for="phone" class="required">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Telephone number" required aria-required="true">
+
+                    <label for="callback" class="required">Contact preference</label>
+                    <input type="text" id="callback" name="callback" placeholder="Phone, Email or Text" required aria-required="true">
+
+                    <!--
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Optional Message"></textarea>
+                    -->
+
+                    <p class="red-asterisk">Required</p>
+
+                    <div class="cf-turnstile"
+                         data-sitekey="0x4AAAAAABiledqTBpWCdr0-"
+                         data-callback="javascriptCallback"
+                         aria-label="Captcha Verification">
+                    </div>
+
+                    <button type="submit">Send</button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FAB back to top -->
+    <a class="fab fab--bottom-right fab--pill" href="#top" aria-label="Back to top">↑</a>
+
+    <!-- Footer (web component) -->
+    <site-footer></site-footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+
+</body>
+</html>
