@@ -28,6 +28,11 @@
     --border-radius: 6px;           /* Border radius */
     --border-color: #ccc;           /* Border colour for cards, blockquotes, tables */
 
+    /* Form field sizes */
+    --form-width-sm: 200px;
+    --form-width-md: 300px;
+    --form-width-lg: 600px;
+
     --fab-size: 64px;
     --fab-size-sm: 52px;
     --fab-size-lg: 72px;
@@ -59,8 +64,8 @@
     --heading-align: left;
     --th-td-text-align: left;
 
-    --brand-primary: lightblue;   /* Design tokens */
-    --brand-accent: blue;
+    --brand-primary: #FFD760;   /* Design tokens */
+    --brand-accent: black;
 
     --text-dark: black;
     --text-medium: lightslategrey;
@@ -71,22 +76,22 @@
     --bg-inner: white;
     --bg-blockquote-table: honeydew;
 
-    --bg-nav-footer: lightblue;
-    --text-nav: navy;
-    --text-nav-hover: navy;
-    --text-footer: navy;
+    --bg-nav-footer: #FFD760;
+    --text-nav: black;
+    --text-nav-hover: grey;
+    --text-footer: black;
 
-    --bg-button: lightblue;
-    --bg-button-hover: dodgerblue;
-    --text-button: blue;
-    --text-button-hover: white;
+    --bg-button: #FFD760;
+    --bg-button-hover: #FFD760;
+    --text-button: black;
+    --text-button-hover: grey;
     --button-radius: 25px;
 
     --link-color: blue;
     --link-hover-color: navy;
 
-    --bg-card-normal: white;
-    --bg-card-highlight: honeydew;
+    --bg-card-normal: #d8f2ee;
+    --bg-card-highlight: #cde8e4;
 
 }
 

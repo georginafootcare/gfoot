@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--Framework Oakwood v4 2026-03-09-->
 <html lang="en" id="top">
 <!--Framework v4 GFBase 2026-02-27-->
 <head>
@@ -32,6 +32,7 @@
     <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
+        <a href="gfoot-contact.html">Contact</a>
     </nav>
 
     <!-- Hero image -->
@@ -51,32 +52,37 @@
                 <h2>Contact Georgina</h2>
                 <form action="https://submit-form.com/FcOhmtqC0" method="POST">
 
-                    <label for="name" class="required">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Name" required aria-required="true">
+                    <label for="name" class="form-label form-label--required u-mt-lg u-mb-xs">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Name" autocomplete="name" required aria-required="true">
 
-                    <label for="email" class="required">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
+                    <label for="email" class="form-label form-label--required u-mt-lg u-mb-xs">Email</label>
+                    <input class="form-control form-control--lg" type="email" id="email" name="_replyto" placeholder="Email" autocomplete="email" required aria-required="true">
 
-                    <label for="phone" class="required">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Telephone number" required aria-required="true">
+                    <label for="phone" class="form-label form-label--required u-mt-lg u-mb-xs">Phone</label>
+                    <input class="form-control form-control--sm" type="tel" id="phone" name="phone" placeholder="Telephone number" autocomplete="tel" required aria-required="true">
 
-                    <label for="callback" class="required">Contact preference</label>
-                    <input type="text" id="callback" name="callback" placeholder="Phone, Email or Text" required aria-required="true">
+                    <label for="callback" class="form-label form-label--required u-mt-lg u-mb-xs">Contact preference</label>
+                    <input class="form-control form-control--md" type="text" id="callback" name="callback" placeholder="Phone, Email, Text Msg..." required aria-required="true">
 
                     <!--
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Optional Message"></textarea>
+                     <label for="message" class="form-label form-label--required u-mt-lg u-mb-xs">Message</label>
+                    <textarea class="form-control" id="message" name="message" placeholder="How can I help you?" required aria-required="true"></textarea>
                     -->
+
+                    <!-- Redirect after successful submission -->
+                    <input type="hidden" name="_redirect" value="https://georginafootcare.co.uk/gfoot-contact-success.html">
+                    <input type="hidden" name="_error" value="https://georginafootcare.co.uk/gfoot-contact-error.html">
+                    <input type="hidden" name="_no-capture" value="true">
 
                     <p class="red-asterisk">Required</p>
 
-                    <div class="cf-turnstile"
+                     <div class="cf-turnstile u-mt-lg"
                          data-sitekey="0x4AAAAAABiledqTBpWCdr0-"
-                         data-callback="javascriptCallback"
-                         aria-label="Captcha Verification">
+                         data-callback="turnstileReady"
+                         data-mode="managed">
                     </div>
 
-                    <button type="submit">Send</button>
+                    <button type="submit" class="submit-btn" disabled>Send</button>
 
                 </form>
             </div>
@@ -87,7 +93,9 @@
     <a class="fab fab--bottom-right fab--pill" href="#top" aria-label="Back to top">↑</a>
 
     <!-- Footer (web component) -->
-    <site-footer></site-footer>
+    <div class= "u-mt-lg">
+        <site-footer></site-footer>
+    </div>
 
     <!-- Scripts -->
     <script src="js/gfoot-main.js"></script>

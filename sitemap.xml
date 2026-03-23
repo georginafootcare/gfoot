@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://georginafootcar.co.uk/gfoot-contact.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <loc>https://georginafootcare.co.uk/gfoot-contact-error.html</loc>
+    <lastmod>2026-03-23</lastmod>
   </url>
   <url>
-    <loc>https://georginafootcar.co.uk/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <loc>https://georginafootcare.co.uk/gfoot-contact-success.html</loc>
+    <lastmod>2026-03-23</lastmod>
+  </url>
+  <url>
+    <loc>https://georginafootcare.co.uk/gfoot-contact.html</loc>
+    <lastmod>2026-03-23</lastmod>
+  </url>
+  <url>
+    <loc>https://georginafootcare.co.uk/</loc>
+    <lastmod>2026-03-23</lastmod>
   </url>
 </urlset>
