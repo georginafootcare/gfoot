@@ -1,6 +1,6 @@
 <!DOCTYPE html><!--Framework Oakwood v4 2026-03-09-->
 <html lang="en" id="top">
-<!--Framework v4 GFBase 2026-02-27-->
+<!--gfoot using Oakwood Framework v4.1.0 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,19 +70,11 @@
                     -->
 
                     <!-- Redirect after successful submission -->
-                    <input type="hidden" name="_redirect" value="https://georginafootcare.co.uk/gfoot-contact-success.html">
-                    <input type="hidden" name="_error" value="https://georginafootcare.co.uk/gfoot-contact-error.html">
-                    <input type="hidden" name="_no-capture" value="true">
 
                     <p class="red-asterisk">Required</p>
 
-                     <div class="cf-turnstile u-mt-lg"
-                         data-sitekey="0x4AAAAAABiledqTBpWCdr0-"
-                         data-callback="turnstileReady"
-                         data-mode="managed">
-                    </div>
-
-                    <button type="submit" class="submit-btn" disabled>Send</button>
+                    <button type="submit">Send</button>
+                </form>
 
                 </form>
             </div>
@@ -99,7 +91,6 @@
 
     <!-- Scripts -->
     <script src="js/gfoot-main.js"></script>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 
 </body>
 </html>

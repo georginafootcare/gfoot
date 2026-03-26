@@ -1,3 +1,4 @@
+//gfoot using Oakwood Framework v4.1.0
 class SiteFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<div class="item-footer">
@@ -17,16 +18,6 @@ window.addEventListener('scroll', () => {
         fab.classList.toggle('fab--visible', window.scrollY > 300);
     });
 });
-
-// Turnstile callback (Cloudflare calls this automatically)
-window.turnstileReady = function (token) {
-    const btn = document.getElementById("submit-btn");
-
-    if (btn) {
-        btn.disabled = false;
-        btn.classList.add("enabled");
-    }
-};
 
 // GoatCounter analytics
 const gc = document.createElement('script')
