@@ -72,6 +72,11 @@
 
                     <p class="red-asterisk">Required</p>
 
+                    <!-- Redirect after successful submission -->
+                    <input type="hidden" name="_redirect" value="https://georginafootcare.co.uk/gfoot-contact-success.html">
+                    <input type="hidden" name="_error" value="https://georginafootcare.co.uk/gfoot-contact-error.html">
+                    <input type="hidden" name="_no-capture" value="true">
+
                     <button type="submit" id="submit-button" class="button button--submit button--medium u-mt-lg u-mb-lg" >Send</button>
                 </form>
 
@@ -90,6 +95,8 @@
 
     <!-- Scripts -->
     <script src="js/gfoot-main.js"></script>
-
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer>
+    </script>
 </body>
 </html>
