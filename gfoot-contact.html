@@ -6,103 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Georgina Painter BSc (Hons) Podiatry. Contact us for a complete mobile chiropody and podiatry service in the comfort of your own home.">
     <title>Georgina Foot Care</title>
-    <link rel="stylesheet" href="css/1-settings.css">
-    <link rel="stylesheet" href="css/2-base.css">
-    <link rel="stylesheet" href="css/3-components.css">
-    <link rel="stylesheet" href="css/4-utilities.css">
-    <link rel="stylesheet" href="css/5-custom.css">
+    <link rel="stylesheet" href="/css/1-settings.css">
+    <link rel="stylesheet" href="/css/2-base.css">
+    <link rel="stylesheet" href="/css/3-components.css">
+    <link rel="stylesheet" href="/css/4-utilities.css">
+    <link rel="stylesheet" href="/css/5-custom.css">
 </head>
 <body>
 
-    <!-- Top bar: phone number -->
-    <div class="top-bar">
-        <a class="call" href="tel:07807457069" aria-label="Call Georgina Foot Care on 07807 457069">Call 07807 457069</a>
+<!-- Top bar: phone number -->
+<div class="top-bar">
+    <a class="call" href="tel:07807457069" aria-label="Call Georgina Foot Care on 07807 457069">Call 07807 457069</a>
+</div>
+
+<!-- Header: logo left, strapline right (2-column layout via _5-custom.css) -->
+<header class="site-header u-mb-sm">
+    <div class="header-left">
+        <img src="/assets/images/logo.webp" alt="Georgina Foot Care logo" width="200" height="100">
     </div>
-
-    <!-- Header: logo left, strapline right (2-column layout via _5-custom.css) -->
-    <header class="site-header u-mb-sm">
-        <div class="header-left">
-            <img src="assets/images/logo.webp" alt="Georgina Foot Care logo" width="200" height="100">
-        </div>
-        <div class="header-right">
-            <p><em>Mobile foot care on the Isle&nbsp;of&nbsp;Wight</em></p>
-        </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class= "u-mt-md">
-        <a href="index.html">Home</a>
-        <a href="gfoot-contact.html">Contact</a>
-    </nav>
-
-    <!-- Hero image -->
-    <div class="hero-container">
-        <div class="hero-image">
-            <img src="assets/images/hero.webp"
-                 alt="Georgina Painter BSc Hons Podiatry"
-                 fetchpriority="high">
-        </div>
+    <div class="header-right">
+        <p><em>Mobile foot care on the Isle&nbsp;of&nbsp;Wight</em></p>
     </div>
+</header>
+
+<!-- Navigation -->
+<nav class="top-nav u-mt-md" aria-label="Main navigation">
+    <a href="/index.html">Home</a>
+    <a href="/gfoot-contact.html">Contact</a>
+</nav>
+
+<!-- Hero image -->
+<div class="hero-container">
+    <div class="hero-image">
+        <img src="/assets/images/hero.webp"
+             alt="Georgina Painter BSc Hons Podiatry"
+             fetchpriority="high">
+    </div>
+</div>
 
     <!-- Contact form -->
-    <main>
-        <div class="container-contact">
-            <div id="contact" class="item-contact">
-                <h2>Contact Georgina</h2>
-                <form action="https://submit-form.com/FcOhmtqC0" method="POST">
+<main>
+    <div class="contact-container u-mt-lg u-mb-section">
+        <div id="contact" class="contact-item">
+            <h2>Contact Georgina</h2>
+            <form action="https://submit-form.com/FcOhmtqC0" method="POST">
 
-                    <label for="name" class="form-label form-label--required u-mt-lg u-mb-xs">Name</label>
-                    <input class="form-control" type="text" id="name" name="name" placeholder="Name" autocomplete="name" required aria-required="true">
+                <label for="name" class="form-label form-label--required u-mt-lg u-mb-xs">Name</label>
+                <input class="form-control form-control--large" type="text" id="name" name="name" placeholder="Name" autocomplete="name" required>
 
-                    <label for="email" class="form-label form-label--required u-mt-lg u-mb-xs">Email</label>
-                    <input class="form-control form-control--lg" type="email" id="email" name="email" placeholder="Email" autocomplete="email" required aria-required="true">
+                <label for="email" class="form-label form-label--required u-mt-lg u-mb-xs">Email</label>
+                <input class="form-control form-control--large" type="email" id="email" name="_replyto" placeholder="Email" autocomplete="email" required>
 
-                    <label for="phone" class="form-label form-label--required u-mt-lg u-mb-xs">Phone</label>
-                    <input class="form-control form-control--sm" type="tel" id="phone" name="phone" placeholder="Telephone number" autocomplete="tel" required aria-required="true">
+                <label for="phone" class="form-label form-label--required u-mt-lg u-mb-xs">Phone</label>
+                <input class="form-control form-control--medium" type="tel" id="phone" name="phone" placeholder="Telephone number" autocomplete="tel" required>
 
-                    <label for="callback" class="form-label form-label--required u-mt-lg u-mb-xs">Contact preference</label>
-                    <input class="form-control form-control--md" type="text" id="callback" name="callback" placeholder="Phone, Email, Text Msg..." required aria-required="true">
+                <label for="callback" class="form-label form-label--required u-mt-lg u-mb-xs">Contact preference</label>
+                <input class="form-control form-control--medium" type="text" id="callback" name="callback" placeholder="Phone, Email, Text Msg..." required>
 
-                    <!--
-                     <label for="message" class="form-label form-label--required u-mt-lg u-mb-xs">Message</label>
-                    <textarea class="form-control" id="message" name="message" placeholder="How can I help you?" required aria-required="true"></textarea>
-                    -->
+                <!--
+                <label for="message" class="form-label form-label--required u-mt-lg u-mb-xs">Message</label>
+                <textarea class="form-control" id="message" name="message" placeholder="How can I help you?" required></textarea>
+                -->
 
-                    <!-- Redirect after successful submission -->
+                <!-- Redirect after successful submission -->
+                <input type="hidden" name="_redirect" value="https://georginafootcare.co.uk/gfoot-contact-success.html">
+                <input type="hidden" name="_error" value="https://georginafootcare.co.uk/gfoot-contact-error.html">
+                <input type="hidden" name="_no-capture" value="true">
 
-                    <p class="red-asterisk">Required</p>
+                <p class="red-asterisk">Required</p>
 
-                    <!-- Redirect after successful submission -->
-                    <input type="hidden" name="_redirect" value="https://georginafootcare.co.uk/gfoot-contact-success.html">
-                    <input type="hidden" name="_error" value="https://georginafootcare.co.uk/gfoot-contact-error.html">
-                    <input type="hidden" name="_no-capture" value="true">
+                <div class="cf-turnstile"
+                     data-sitekey="0x4AAAAAABiledqTBpWCdr0-">
+                </div>
 
-                    <div class="cf-turnstile"
-                         data-sitekey="0x4AAAAAABiledqTBpWCdr0-"
-                         data-callback="javascriptCallback"
-                         aria-label="Captcha Verification">
-                    </div>
+                <button type="submit" id="submit-button" class="button button--submit button--medium u-mt-lg u-mb-lg" >Send</button>
 
-                    <button type="submit" id="submit-button" class="button button--submit button--medium u-mt-lg u-mb-lg" >Send</button>
-                </form>
-
-                </form>
-            </div>
+            </form>
         </div>
-    </main>
-
-    <!-- FAB back to top -->
-    <a class="fab fab--bottom-right fab--pill" href="#top" aria-label="Back to top">↑</a>
-
-    <!-- Footer (web component) -->
-    <div class= "u-mt-lg">
-        <site-footer></site-footer>
     </div>
 
-    <!-- Scripts -->
-    <script src="js/gfoot-main.js"></script>
-    <script
-        src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer>
-    </script>
+</main>
+
+<!-- FAB back to top -->
+<a class="fab fab--bottom-right fab--pill" href="#top" aria-label="Back to top">↑</a>
+
+<!-- Footer (web component) -->
+<div class= "u-mt-lg">
+    <footer-site><footer-item>Georgina Foot Care Ref:no-js.</footer-item></footer-site>
+</div>
+
+<!-- Scripts -->
+<script src="/js/gfoot-main.js"></script>
+
+<script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer>
+</script>
+
 </body>
 </html>

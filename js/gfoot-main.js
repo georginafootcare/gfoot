@@ -1,15 +1,23 @@
 //gfoot using Oakwood Framework v4.1.0
 class SiteFooter extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<div class="item-footer">
-        <p><strong>Call 07807 457069 for mobile foot care on the Isle of Wight.</strong></p>
-        <p>&copy; 2025 Georgina Painter BSc (Hons) Podiatry. All&nbsp;rights&nbsp;reserved.</p>
-        <p>HCPC&nbsp;Registered&nbsp;No&nbsp;CH33419</p>
-    </div>`;
+        this.render();
+    }
+
+    render() {
+        this.innerHTML = `
+            <footer class="footer-site">
+                <div class="footer-item">
+                    <p><strong>Call 07807 457069 for mobile foot care on the Isle&nbsp;of&nbsp;Wight.</strong></p>
+                    <p>&copy; 2025 Georgina Painter BSc (Hons) Podiatry. All&nbsp;rights&nbsp;reserved.</p>
+                    <p>HCPC&nbsp;Registered&nbsp;No&nbsp;CH33419</p>
+                </div>
+            </footer>
+        `;
     }
 }
 
-customElements.define('site-footer', SiteFooter);
+customElements.define('footer-site', SiteFooter);
 
 const fabs = document.querySelectorAll('.fab');
 
